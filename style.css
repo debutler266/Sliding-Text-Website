@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/background.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: rgba(29, 33, 61, 0.5);
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 155px;
+}
+
+.logo img {
+  width: 30px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.user img {
+  width: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.side {
+  width: 155px;
+  height: 100vh;
+  background: rgba(29, 31, 58, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search-icon {
+  width: 20px;
+  display: block;
+  margin: 120px auto 0;
+}
+
+.social {
+  width: 20px;
+  display: block;
+  margin: 220px auto 0;
+  text-align: center;
+}
+
+.social img {
+  height: 15px;
+  margin-bottom: 30px;
+}
+
+.info-icon {
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.message-container {
+  width: 600px;
+  height: 280px;
+  position: absolute;
+  left: 14%;
+  top: 57%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+#slider {
+  display: inline-flex; /* displays in columns */
+  transition: 0.6s;
+}
+
+.message-col {
+  width: 600px;
+  height: 280px;
+}
+
+.message-col h1 {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.message-col p {
+  color: #ddd;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.message-col a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  background: #ffffff;
+  font-size: 17px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.controller {
+  width: 1px;
+  height: 320px;
+  position: absolute;
+  top: 55%;
+  right: 55px;
+  transform: translateY(-50%);
+  display: block;
+  background: #c0c0c0;
+}
+
+#line1, #line2, #line3, #line4 {
+  height: 80px;
+  width: 10px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+#active {
+  width: 5px;
+  height: 80px;
+  border-radius: 10px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.6s;
+}
